@@ -51,10 +51,13 @@ li:hover{
 }
 
 .meu-nome {
-    position: absolute;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
     font-size: 20px;
-    top: 45%;
+    margin-top: 15%;
     left: 15%;
+    cursor: pointer;
+
 }
 
 h1 {
@@ -73,12 +76,11 @@ h1 span{
 
 }
 
-section {
+section.sobre-mim {
     display: flex;
     align-items: center;
     padding: 60px 10%;
     background-color: black;
-
 }
 
 section img{
@@ -117,4 +119,100 @@ section div button:hover {
     background-color: black;
     border: 3px solid rgb(14, 123, 135);
     transition: 0.5s;
+}
+
+
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* ESTILO DA SESSÃO PROJETOS*/
+section.projetos{
+    padding: 40px 4%;
+    background-color: #191919;
+}
+
+section.projetos .flex{
+    gap: 60px;
+
+}
+
+h2.titulo{
+    color: #ffffff;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 5%;
+}
+
+section.projetos .projetos-box{
+    color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    transition: .2s;
+}
+
+section.projetos .projetos-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #ffffff75;
+}
+
+
+
+section.projetos .projetos-box i{
+    font-size: 70px;
+    color: rgb(14, 123, 135);
+}
+
+div.flex {
+    display: flex;
+}
+
+section.projetos .projetos-box h3{
+    font-size: 18px;
+    margin: 30px 0;
+  
+}
+
+section.entre-em-contato{
+    padding-top: 300px;
+    padding-bottom: 100px;
+    background-color: rgb(14, 123, 135);
+}
+
+section.entre-em-contato h2{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+section.entre-em-contato p{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+section.entre-em-contato ul{
+    text-align: center;
+    margin-left: 35px;
+    font-size: 50px;
+}
+
+section.entre-em-contato i{
+    font-size: 40px;
+    color: white;
+}
+
+section.entre-em-contato i:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #ffffff75;
+    transition: .2s;
+    cursor: pointer;
 }
